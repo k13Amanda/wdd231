@@ -96,8 +96,9 @@ main {
 }
 
 .citycard img{
-    height: 400px;
-    padding: 15px;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
 }
 
 .worklist {
@@ -168,4 +169,33 @@ footer{
 #lastModified{
     color: yellow;
 }
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    section {
+        margin: 20px 10px;
+    }
+
+    .classlist {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .classsort a, .classlist a {
+        padding: 1rem 2rem;
+        margin: 10px 0; 
+    }
+        
+    .citycard img { 
+        width: 100%; /* Make the image responsive */ 
+        height: auto; /* Maintain aspect ratio */ 
+        max-height: 300px; /* Optional: Limit the maximum height */
+    }
+}
+
 
