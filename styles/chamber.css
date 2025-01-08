@@ -202,23 +202,28 @@ footer{
     }
 
     .nav-links {
-        display: none; /* Hide navigation links on smaller screens */
+        display: none;
         flex-direction: column;
         background-color: black;
         position: absolute;
-        top: 50px; /* Adjust top position to match your header height */
         width: 100%;
         text-align: center;
     }
 
     .nav-links a {
         padding: 20px;
+        background-color: black;
     }
 
+    .nav-links.show {
+        display: flex;
+    }
+    
     .hamburger {
-        display: block; /* Show hamburger menu on smaller screens */
+        display: block;
         text-align: center;
         font-size: 25pt;
+    
     }
 }
 

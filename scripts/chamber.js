@@ -1,13 +1,11 @@
-// Select the span with the id "currentyear"
+// currentyear
 const yearSpan = document.querySelector("#currentyear");
-// Get the current date
 const today = new Date();
-// Extract the current year
 const currentYear = today.getFullYear();
-// Set the text content of the span to the current year
 yearSpan.textContent = currentYear;
 
 
+// lastModified
 const dateSpan = document.querySelector("#lastModified");
 const now = new Date();
 const lastModified = document.lastModified
@@ -16,3 +14,15 @@ const formattedTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.g
 const formattedDateTime = `${formattedDate} ${formattedTime}`;
 
 dateSpan.textContent = `Last Modified: ${formattedDateTime}`;
+
+
+// hamburger button
+document.addEventListener('DOMContentLoaded', function() {
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('show');
+});
+});
+
