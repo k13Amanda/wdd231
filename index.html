@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="author" content="Amanda Wessman">
+    <meta name="description" content="WDD 231- Amanda Wessman Index page ">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Splash&display=swap" rel="stylesheet">
+    <title>WDD 231 - Amanda Wessman</title>
+    <script src= "scripts/chamber.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231- Amanda</h1>
+    <header>
+        <div class="imgamanda">
+        <img src="images/amanda-small.jpg" alt="Picture of Amanda Wessman" class="picamanda">
+        <h1>Amanda Wessman</h1>
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Chamber</a>
+            <a href="https://github.com/k13Amanda">GitHub Profile</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="coursecard">
+            <h2>Course Work</h2>
+            <ul class="worklist">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ul>
+              
+        </section>
+
+        <section class="citycard">
+            <h2>North Port, Florida</h2>
+            <figure>
+            <img src="images/florida-beach.webp" alt="Picture of a Florida Beach">
+            <figcaption>Florida Beach</figcaption>
+            </figure>
+        </section>
+
+        <section class="webcard">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="classsort">
+            <a href="">All</a>
+            <a href="">CES</a>
+            <a href="">WDD</a>
+            </div>
+
+            <hr>
+
+            <div class="classlist">
+            <a href="">CES 110</a>
+            <a href="">WDD 130</a>
+            <a href="">CES 111</a>
+            <a href="">CES 210</a>
+            <a href="">WDD 131</a>
+            <a href="">WDD 231</a>
+            </div>
+        </section>
+
+    </main>
+    
+
+    <footer>
+        <p> ©️<span id="currentyear"></span>⭐Amanda Wessman⭐ Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
     
 </body>
 </html>

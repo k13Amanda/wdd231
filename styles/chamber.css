@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1600px;
+    font-family:"roboto", Arial, Helvetica, sans-serif;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --main-color:rgb(26, 98, 132);
+    --headingtext: rgb(240, 248, 255);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    background-color:black;
+    color:var(--headingtext);
+    height: 50px;
+}
+
+nav a{
+    color:var(--headingtext);
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+header{
+    background-color: var(--main-color);  
+}
+
+.imgamanda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.imgamanda img{
+    margin-right: 50px;
+    height: 150px;
+}
+
+.picamanda{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    color:var(--headingtext);
+}
+
+h2{
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 10px;
+    color:var(--headingtext);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+figcaption{
+    text-align: center;
+    margin: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.coursecard {
+    grid-column: span 1; 
+    text-align: left;   
+}
+
+.citycard {
+    grid-column: span 1; 
+}
+
+.citycard img{
+    height: 400px;
+    padding: 15px;
+}
+
+.worklist {
+    list-style-type: disc; 
+    padding-left: 2rem; 
+    margin: 15px; 
+}
+
+.worklist li {
+    margin-bottom: 0.5rem; /* Adds some space between the list items */
+}
+
+  
+.webcard {
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    
+}
+
+section{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 30px;
+    text-align: center;
+    border-radius: 15px; /* Adds rounded corners to each card */
+    
+}
+
+.classsort {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;
+}
+
+.classlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
+    justify-items: center;
+}
+
+.classsort a, .classlist a { 
+    display: block; 
+    padding: 1rem 5rem;
+    margin: 15px; 
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: black;
+    color:var(--headingtext);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 100px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+    color: white;
+}
+
+#lastModified{
+    color: yellow;
+}
+
