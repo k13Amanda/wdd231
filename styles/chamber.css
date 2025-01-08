@@ -22,7 +22,7 @@ body{
 }
 
 
-nav{
+.nav-links{
     display: flex;
     justify-content: space-evenly;
     place-items: center;
@@ -39,6 +39,10 @@ nav a{
 
 nav a:hover {
     color: yellow;
+}
+
+.hamburger {
+    display: none;
 }
 
 header{
@@ -97,7 +101,7 @@ main {
 
 .citycard img{
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
     padding: 20px;
 }
 
@@ -196,6 +200,29 @@ footer{
         height: auto; /* Maintain aspect ratio */ 
         max-height: 300px; /* Optional: Limit the maximum height */
     }
+
+    .nav-links {
+        display: none; /* Hide navigation links on smaller screens */
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 50px; /* Adjust top position to match your header height */
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu on smaller screens */
+        text-align: center;
+        font-size: 25pt;
+    }
 }
+
+
+
 
 
