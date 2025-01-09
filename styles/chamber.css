@@ -68,6 +68,7 @@ header{
 
 h1{
     color:var(--headingtext);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2{
@@ -173,6 +174,73 @@ footer{
 #lastModified{
     color: yellow;
 }
+
+
+
+.checkmark {
+    font-weight: bold;
+    color: green; /* Optional: Set color of the checkmark */
+    margin-right: 0.5rem; /* Adds space between the checkmark and the text */
+    display: inline-block; /* Ensures proper alignment */
+}
+
+.course-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-item.completed {
+    background-color: #d4edda; /* Light green background for completed courses */
+}
+
+
+
+
+.classsort div {
+    cursor: pointer; 
+    padding: 1rem 5rem;
+    margin: 15px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: black;
+    color: var(--headingtext);
+}
+
+.classsort div:hover {
+    background-color: yellow; /* Optional: Change background color on hover */
+    color: black; /* Optional: Change text color on hover */
+}
+
+.course-item p {
+    background-color: #f9f9f9;
+    padding: 1rem 5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media query for mobile view */
