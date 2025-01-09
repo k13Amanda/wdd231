@@ -179,7 +179,7 @@ footer{
 
 .checkmark {
     font-weight: bold;
-    color: green; /* Optional: Set color of the checkmark */
+    color: rgb(6, 56, 6); /* Optional: Set color of the checkmark */
     margin-right: 0.5rem; /* Adds space between the checkmark and the text */
     display: inline-block; /* Ensures proper alignment */
 }

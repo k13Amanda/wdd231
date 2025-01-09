@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const classlist = document.getElementById('classlist');
+    const totalCreditsElement = document.getElementById('total-credits');
 
     function renderCourses(filter = 'all') {
         classlist.innerHTML = ''; // Clear existing courses
@@ -111,6 +112,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             classlist.appendChild(courseElement);
         });
+
+        // Calculate total credits using reduce function
+        const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+        totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
     }
 
     document.querySelectorAll('.classsort div').forEach(link => {
@@ -122,4 +127,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
     renderCourses(); // Initial render with all courses
 });
-
