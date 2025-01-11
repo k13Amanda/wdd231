@@ -97,6 +97,7 @@ h4{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 
@@ -133,31 +134,31 @@ footer img{
 
 
 
-
 /* Media query for mobile view */
 @media (max-width: 768px) {
     main {
         display: block;
     }
 
-    section {
-        margin: 20px 10px;
+    footer{
+        display: block;
     }
 
-    .classlist {
+    footer img{
+        display: inline;
+    }
+
+    
+
+    .homecards, .buscards {
         grid-template-columns: 1fr;
         gap: 0.5rem;
     }
-
-    .classsort a, .classlist a {
-        padding: 1rem 2rem;
-        margin: 10px 0; 
-    }
         
-    .citycard img { 
+    .heroimg img{ 
         width: 100%; /* Make the image responsive */ 
         height: auto; /* Maintain aspect ratio */ 
-        max-height: 300px; /* Optional: Limit the maximum height */
+        max-width: 400px; /* Optional: Limit the maximum height */
     }
 
     .nav-links {
@@ -166,6 +167,7 @@ footer img{
         background-color: black;
         position: absolute;
         width: 100%;
+        left: 0;
         text-align: center;
     }
 
