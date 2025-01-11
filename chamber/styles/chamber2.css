@@ -1,0 +1,167 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1600px;
+    font-family:"roboto", Arial, Helvetica, sans-serif;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --main-color:rgb(26, 98, 132);
+    --headingtext: rgb(218, 213, 159);
+}
+
+header{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+.header-content-left{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.headerpic{
+    margin: 15px;
+    height: 100px;
+}
+
+
+nav a{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.hamburger {
+    display: none;
+}
+
+header{
+    background-color: var(--main-color);  
+}
+
+.homecards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px;
+}
+
+.buscards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px;
+}
+
+.heroimg{
+    height: 100%;
+}
+
+
+h1{
+    color:var(--headingtext);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    background-color: var(--main-color);
+    height: auto;
+    padding: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.copytext{
+    color: white;
+}
+
+footer img{
+    height: 4em;
+    padding: 15px;
+}
+
+
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    section {
+        margin: 20px 10px;
+    }
+
+    .classlist {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .classsort a, .classlist a {
+        padding: 1rem 2rem;
+        margin: 10px 0; 
+    }
+        
+    .citycard img { 
+        width: 100%; /* Make the image responsive */ 
+        height: auto; /* Maintain aspect ratio */ 
+        max-height: 300px; /* Optional: Limit the maximum height */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 20px;
+        background-color: black;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: block;
+        text-align: center;
+        font-size: 25pt;
+    
+    }
+}
+
+
