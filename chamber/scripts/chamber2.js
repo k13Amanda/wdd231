@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const listViewBtn = document.getElementById('list-view-btn');
         const container = document.body;
     
-        // Set default view to grid view
+
         container.classList.add('grid-view');
     
         gridViewBtn.addEventListener('click', () => {
@@ -69,15 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const companySection = document.createElement('section');
                 companySection.className = 'card';
                 companySection.innerHTML = `
-                    <h3>${company.name}</h3>
-                    <h5>${company.description}</h5>
-                    <hr>
-                    <img src="images/${company.image}" alt="${company.name} Logo">
+                    <h3 class= "name">${company.name}</h3>
+                    <img class="busimg" src="images/${company.image}" alt="${company.name} Logo">
                     <p class="email"><strong>Email:</strong> <a href="mailto:${company.email}">${company.email}</a></p>
                     <p class="phone"><strong>Phone:</strong> ${company.phone}</p>
                     <p class="url"><strong>URL:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
                     <p class="address"><strong>Address:</strong> ${company.address}</p>
-                    <p class="level"><strong>Membership Level:</strong> ${company.membershipLevel === 1 ? 'Member' : company.membershipLevel === 2 ? 'Silver' : 'Gold'}</p>
                 `;
                 buscards.appendChild(companySection);
             });

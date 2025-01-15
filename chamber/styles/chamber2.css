@@ -83,19 +83,31 @@ h4{
     margin-bottom: 3px;
 }
 
-
-/* List view styles */ 
-.list-view .card {
-    width: 100%;
-    float: none; 
-    margin-bottom: 30px;
+.grid-view .name{
+    border-bottom: solid black 1px;
 }
+
+
+/* List view styles */
 .list-view .buscards {
     display: block;
 }
 
+.list-view .card {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+}
+
+
+
 .grid-view .address,
-.grid-view .level {
+.list-view .busimg
+{
     display: none;
 }
 
@@ -103,7 +115,6 @@ h4{
 #list-view-btn{
     padding: 10px;
     margin-left: 20px;
-
 }
 
 .card img{
