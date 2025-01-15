@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Tech Innovators",
+        "address": "123 Innovation Drive, Silicon Valley, CA",
+        "phone": "555-123-4567",
+        "website": "https://www.techinnovators.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 3,
+        "description": "Leading the future with cutting-edge technology solutions.",
+        "email": "info@techinnovators.com"
+    },
+    {
+        "name": "Green Energy Solutions",
+        "address": "456 Eco Lane, Austin, TX",
+        "phone": "555-987-6543",
+        "website": "https://www.greenenergy.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 2,
+        "description": "Providing sustainable energy solutions for a cleaner future.",
+        "email": "contact@greenenergy.com"
+    },
+    {
+        "name": "Health and Wellness Co.",
+        "address": "789 Wellness Way, Boulder, CO",
+        "phone": "555-654-3210",
+        "website": "https://www.wellnessco.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 1,
+        "description": "Promoting holistic health and well-being for all.",
+        "email": "support@wellnessco.com"
+    },
+    {
+        "name": "Creative Design Studio",
+        "address": "321 Art Blvd, New York, NY",
+        "phone": "555-321-0987",
+        "website": "https://www.designstudio.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 2,
+        "description": "Innovative designs that inspire and captivate.",
+        "email": "hello@creativedesign.com"
+    },
+    {
+        "name": "Global Logistics Inc.",
+        "address": "654 Transport Ave, Chicago, IL",
+        "phone": "555-456-7890",
+        "website": "https://www.globallogistics.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 3,
+        "description": "Efficient and reliable logistics solutions worldwide.",
+        "email": "inquiry@globallogistics.com"
+    },
+    {
+        "name": "Culinary Delights",
+        "address": "987 Gourmet St, San Francisco, CA",
+        "phone": "555-789-0123",
+        "website": "https://www.culinarydelights.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 1,
+        "description": "Exquisite culinary experiences for food enthusiasts.",
+        "email": "info@culinarydelights.com"
+    },
+    {
+        "name": "Financial Growth Advisors",
+        "address": "123 Wealth Rd, Boston, MA",
+        "phone": "555-234-5678",
+        "website": "https://www.growthadvisors.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 2,
+        "description": "Expert financial advice for sustainable growth.",
+        "email": "contact@growthadvisors.com"
+    }
+]

@@ -18,10 +18,72 @@ dateSpan.textContent = `Last Modified: ${formattedDateTime}`;
 
 // hamburger button
 document.addEventListener('DOMContentLoaded', function() {
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
-hamburger.addEventListener('click', function() {
-    navLinks.classList.toggle('show');
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('show');
+    });
 });
-});
+
+
+
+
+
+// hamburger button
+    // const hamburgerElement = document.querySelector('#mybutton');
+    // const navElement = document.querySelector('.menulinks');
+        
+    // hamburger.addEventListener('click', () => {
+    //     navElement.classList.toggle('open');
+    //     hamburgerElement.classList.toggle('open');
+    // });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', async () => {
+        const gridViewBtn = document.getElementById('grid-view-btn');
+        const listViewBtn = document.getElementById('list-view-btn');
+        const container = document.body;
+    
+        // Set default view to grid view
+        container.classList.add('grid-view');
+    
+        gridViewBtn.addEventListener('click', () => {
+            container.classList.add('grid-view');
+            container.classList.remove('list-view');
+        });
+    
+        listViewBtn.addEventListener('click', () => {
+            container.classList.add('list-view');
+            container.classList.remove('grid-view');
+        });
+    
+        try {
+            const response = await fetch('data/members.json');
+            const companies = await response.json();
+    
+            const buscards = document.getElementById('buscards');
+            companies.forEach(company => {
+                const companySection = document.createElement('section');
+                companySection.className = 'card';
+                companySection.innerHTML = `
+                    <h3>${company.name}</h3>
+                    <h5>${company.description}</h5>
+                    <hr>
+                    <img src="images/${company.image}" alt="${company.name} Logo">
+                    <p class="email"><strong>Email:</strong> <a href="mailto:${company.email}">${company.email}</a></p>
+                    <p class="phone"><strong>Phone:</strong> ${company.phone}</p>
+                    <p class="url"><strong>URL:</strong> <a href="${company.website}" target="_blank">${company.website}</a></p>
+                    <p class="address"><strong>Address:</strong> ${company.address}</p>
+                    <p class="level"><strong>Membership Level:</strong> ${company.membershipLevel === 1 ? 'Member' : company.membershipLevel === 2 ? 'Silver' : 'Gold'}</p>
+                `;
+                buscards.appendChild(companySection);
+            });
+        } catch (error) {
+            console.error('Error fetching company data:', error);
+        }
+    });
+    
+    

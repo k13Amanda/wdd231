@@ -26,20 +26,18 @@ header{
     align-items: end;
     justify-content: space-between;
     padding: 15px;
-
 }
+
 .header-content-left{
     display: flex;
     text-align: center;
     align-items: center;
-
 }
 
 .headerpic{
     margin: 15px;
     height: 100px;
 }
-
 
 nav a{
     padding: 15px;
@@ -80,14 +78,44 @@ h4{
     gap: 30px;
     margin: 20px;
 }
-.buscards img{
+
+.card p {
+    margin-bottom: 3px;
+}
+
+
+/* List view styles */ 
+.list-view .card {
+    width: 100%;
+    float: none; 
+    margin-bottom: 30px;
+}
+.list-view .buscards {
+    display: block;
+}
+
+.grid-view .address,
+.grid-view .level {
+    display: none;
+}
+
+#grid-view-btn,
+#list-view-btn{
+    padding: 10px;
+    margin-left: 20px;
+
+}
+
+.card img{
     height: 80px;
     float: left;
     padding: 5px;
 }
-.card1, .card2, .card3{
+
+.card{
     background-color: bisque;
 }
+
 .eventcard, .currentcard, .forcastcard{
     background-color: bisque;
     height: 100px;
@@ -100,16 +128,14 @@ h4{
     max-width: 100%;
 }
 
-
 h1{
     color:var(--headingtext);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
-
-
-
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+}
 
 footer{
     display: flex;
@@ -134,6 +160,7 @@ footer img{
 
 
 
+
 /* Media query for mobile view */
 @media (max-width: 768px) {
     main {
@@ -148,8 +175,6 @@ footer img{
         display: inline;
     }
 
-    
-
     .homecards, .buscards {
         grid-template-columns: 1fr;
         gap: 0.5rem;
@@ -161,6 +186,8 @@ footer img{
         max-width: 400px; /* Optional: Limit the maximum height */
     }
 
+
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -169,7 +196,7 @@ footer img{
         width: 100%;
         left: 0;
         text-align: center;
-    }
+    } 
 
     .nav-links a {
         padding: 20px;
