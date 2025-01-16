@@ -18,7 +18,7 @@ body{
 
 :root{
     --main-color:rgb(26, 98, 132);
-    --headingtext: rgb(218, 213, 159);
+    --headingtext: rgb(255, 227, 194);
 }
 
 header{
@@ -46,7 +46,7 @@ nav a{
 }
 
 nav a:hover {
-    color: yellow;
+    color: var(--headingtext);
 }
 
 .hamburger {
@@ -83,12 +83,17 @@ h4{
     margin-bottom: 3px;
 }
 
+
+.grid-view .card{
+    border: 1px solid black;
+    text-decoration: none;
+}
+
 .grid-view .name{
     border-bottom: solid black 1px;
 }
 
 
-/* List view styles */
 .list-view .buscards {
     display: block;
 }
@@ -98,7 +103,7 @@ h4{
     float: none;
     margin-bottom: 20px; 
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
 }
@@ -124,11 +129,11 @@ h4{
 }
 
 .card{
-    background-color: bisque;
+    background-color: var(--headingtext);
 }
 
 .eventcard, .currentcard, .forcastcard{
-    background-color: bisque;
+    background-color: var(--headingtext);
     height: 100px;
 }
 
