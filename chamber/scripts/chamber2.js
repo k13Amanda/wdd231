@@ -29,19 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-// hamburger button
-    // const hamburgerElement = document.querySelector('#mybutton');
-    // const navElement = document.querySelector('.menulinks');
-        
-    // hamburger.addEventListener('click', () => {
-    //     navElement.classList.toggle('open');
-    //     hamburgerElement.classList.toggle('open');
-    // });
-
-
-
-
     document.addEventListener('DOMContentLoaded', async () => {
         const gridViewBtn = document.getElementById('grid-view-btn');
         const listViewBtn = document.getElementById('list-view-btn');
