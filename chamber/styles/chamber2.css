@@ -194,7 +194,7 @@ footer img{
         display: inline;
     }
 
-    .homecards, .buscards {
+    .homecards, .buscards, .spotlight-container {
         grid-template-columns: 1fr;
         gap: 0.5rem;
     }
