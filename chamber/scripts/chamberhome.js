@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // Fetch the organizations from members.json
+    
     try {
         const response = await fetch('data/members.json');
         const organizations = await response.json();
@@ -67,5 +67,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Error fetching organizations:', error);
     }
 });
+
+
+
+
 
 
