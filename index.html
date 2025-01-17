@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amanda Wessman">
+    <meta name="description" content="WDD 231- Amanda Wessman Index page ">
+    <meta property="og:title" content="North Port, Florida" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://k13amanda.github.io/wdd231" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="og:image" content="/images/og-image.jpg" />
+    <meta property="og:description" content="WDD 231- Commerce site for North Port">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Picture of a florida beach">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <script src="scripts/chamber.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Splash&display=swap" rel="stylesheet">
+    <title>WDD 231 - Amanda Wessman</title>
+</head>
+<body>
+    <header>
+        <div class="imgamanda">
+            <img src="images/amanda-small.jpg" alt="Picture of Amanda Wessman" class="picamanda">
+            <h1>Amanda Wessman</h1>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="">Home</a>
+                <a href="">Chamber</a>
+                <a href="https://github.com/k13Amanda">GitHub Profile</a>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="coursecard">
+            <h2>Course Work</h2>
+            <ul class="worklist">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+              </ul>
+              
+        </section>
+
+        <section class="citycard">
+            <h2>North Port, Florida</h2>
+            <figure>
+            <img src="images/florida-beach.webp" alt="Picture of a Florida Beach">
+            <figcaption>Florida Beach</figcaption>
+            </figure>
+        </section>
+
+        <section class="webcard">
+            <h2>Web and Computer Programming Certificate</h2>
+        
+            <div class="classsort">
+                <div data-filter="all">All</div>
+                <div data-filter="CSE">CSE</div>
+                <div data-filter="WDD">WDD</div>
+            </div>
+            
+            <hr> <!-- Adds a horizontal line between the classsort and classlist -->
+        
+            <div class="classlist" id="classlist">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
+        
+            <p id="total-credits">Total Credits: 0</p> <!-- Element to display total credits -->
+        </section>
+        
+
+    </main>
+    
+
+    <footer>
+        <p> ©️<span id="currentyear"></span>⭐Amanda Wessman⭐ Utah</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

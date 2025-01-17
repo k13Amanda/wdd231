@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Amanda Wessman">
-    <meta name="description" content="WDD 231- Amanda Wessman Index page ">
-    <meta property="og:title" content="North Port, Florida" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://k13amanda.github.io/wdd231" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-    <meta property="og:image" content="/images/og-image.jpg" />
+    <meta name="description" content="WDD 231- Amanda Wessman - Home page ">
+    <meta property="og:title" content="North Port, Florida">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://k13amanda.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://github.com/k13Amanda/wdd231/blob/main/chamber/images/og-image.jpg?raw=true">
     <meta property="og:description" content="WDD 231- Commerce site for North Port">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image:alt" content="Picture of a florida beach">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/chamber.js" defer></script>
+    <link rel="stylesheet" href="styles/chamber2.css">
+    <script src="scripts/chamber2.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,67 +23,80 @@
 </head>
 <body>
     <header>
-        <div class="imgamanda">
-            <img src="images/amanda-small.jpg" alt="Picture of Amanda Wessman" class="picamanda">
-            <h1>Amanda Wessman</h1>
+        <div class="header-content-left">
+            <img src="images/florida-beach.webp" alt="Picture of a beach" class="headerpic">
+            <div>
+                <h1>North Port</h1>
+                <h4>Chamber of Commerce</h4>
+            </div>
         </div>
         <nav>
             <div class="hamburger" id="hamburger">
                 ☰
             </div>
             <div class="nav-links" id="nav-links">
-                <a href="">Home</a>
-                <a href="">Chamber</a>
-                <a href="https://github.com/k13Amanda">GitHub Profile</a>
-                <a href="https://www.linkedin.com/">LinkedIn</a>
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="">Join</a>
+                <a href="">Discover</a>
             </div>
         </nav>
     </header>
     
     <main>
-        <section class="coursecard">
-            <h2>Course Work</h2>
-            <ul class="worklist">
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-              </ul>
-              
-        </section>
-
-        <section class="citycard">
-            <h2>North Port, Florida</h2>
-            <figure>
+        <section class="heroimg">
             <img src="images/florida-beach.webp" alt="Picture of a Florida Beach">
-            <figcaption>Florida Beach</figcaption>
-            </figure>
         </section>
 
-        <section class="webcard">
-            <h2>Web and Computer Programming Certificate</h2>
-        
-            <div class="classsort">
-                <div data-filter="all">All</div>
-                <div data-filter="CSE">CSE</div>
-                <div data-filter="WDD">WDD</div>
-            </div>
-            
-            <hr> <!-- Adds a horizontal line between the classsort and classlist -->
-        
-            <div class="classlist" id="classlist">
-                <!-- Courses will be dynamically inserted here -->
-            </div>
-        
-            <p id="total-credits">Total Credits: 0</p> <!-- Element to display total credits -->
-        </section>
-        
+        <h2>Home</h2>
+        <div class="homecards">
+            <section class="eventcard">
+                <h3>Events</h3>
+            </section>
+            <section class="currentcard">
+                <h3>Current Weather</h3>
+            </section>
+            <section class="forcastcard">
+                <h3>Weather Forcast</h3>
+            </section>
+        </div>
+        <h2>Company Members</h2>
+        <button id="grid-view-btn">Grid View</button>
+        <button id="list-view-btn">List View</button>
+        <div class="buscards" id="buscards"></div>
 
     </main>
-    
 
     <footer>
-        <p> ©️<span id="currentyear"></span>⭐Amanda Wessman⭐ Utah</p>
-        <p><span id="lastModified"></span></p>
+        <div>
+            <p>North Port Chamber of Commerce</p>
+            <p>100 N Beach Street</p>
+            <p>North Port, Floride 999</p>
+            <p>info@northport.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+
+        <div class="social-media-buttons">
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="images/youtubelogo.webp" alt="YouTube">             
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitterlogo.webp" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagramlogo.webp" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebooklogo.webp" alt="Facebook">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Amanda Wessman</p>
+            <p>©<span id="currentyear"></span> North Port Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
     </footer>
     
 </body>
