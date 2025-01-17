@@ -72,7 +72,7 @@ h4{
     margin: 20px;
 }
 
-.buscards{
+.buscards, .spotlight-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -84,12 +84,12 @@ h4{
 }
 
 
-.grid-view .card{
+.grid-view .card, .card{
     border: 1px solid black;
     text-decoration: none;
 }
 
-.grid-view .name{
+.grid-view .name, .card .name{
     border-bottom: solid black 1px;
 }
 
@@ -132,9 +132,12 @@ h4{
     background-color: var(--headingtext);
 }
 
-.eventcard, .currentcard, .forcastcard{
+
+
+.eventcard, .currentcard, .joincard{
     background-color: var(--headingtext);
-    height: 100px;
+    height: auto;
+    padding: 15px;
 }
 
 .heroimg{

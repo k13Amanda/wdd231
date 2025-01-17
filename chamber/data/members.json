@@ -68,5 +68,25 @@
         "membershipLevel": 2,
         "description": "Expert financial advice for sustainable growth.",
         "email": "contact@growthadvisors.com"
+    },
+    {
+        "name": "EcoFriendly Products",
+        "address": "789 Green Way, Portland, OR",
+        "phone": "555-321-4567",
+        "website": "https://www.ecofriendlyproducts.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 1,
+        "description": "Offering sustainable and eco-friendly products for everyday use.",
+        "email": "support@ecofriendlyproducts.com"
+    },
+    {
+        "name": "Techie Toys",
+        "address": "123 Tech Park, Seattle, WA",
+        "phone": "555-654-3210",
+        "website": "https://www.techie-toys.com",
+        "image": "florida-beach.webp",
+        "membershipLevel": 3,
+        "description": "Innovative and educational toys for the tech-savvy generation.",
+        "email": "contact@techie-toys.com"
     }
 ]

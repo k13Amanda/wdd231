@@ -14,7 +14,7 @@
     <meta name="twitter:image:alt" content="Picture of a florida beach">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber2.css">
-    <script src="scripts/chamber2.js" defer></script>
+    <script src="scripts/chamberhome.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,15 +56,30 @@
             <section class="currentcard">
                 <h3>Current Weather</h3>
             </section>
-            <section class="forcastcard">
-                <h3>Weather Forcast</h3>
+            <section class="joincard">
+                <h3>Sign Up to Become a Member</h3><br>
+                <form action="/submit_registration" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <input type="submit" value="Sign Up">
+                </form>
+                
+                
+
+
             </section>
         </div>
-        
-        <h2>Company Members</h2>
-        <button id="grid-view-btn">Grid View</button>
-        <button id="list-view-btn">List View</button>
-        <div class="buscards" id="buscards"></div>
+
+        <h2>Company Member Spotlights</h2>
+        <div id="buscards" class="spotlight-container"></div>
+
 
     </main>
 
