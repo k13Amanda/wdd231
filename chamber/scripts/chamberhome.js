@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             companySection.className = 'card';
             companySection.innerHTML = `
                 <h3 class="name">${org.name}</h3>
+                <hr>
                 <img class="busimg" src="images/${org.image}" alt="${org.name} Logo">
                 <p class="email"><strong>Email:</strong> <a href="mailto:${org.email}">${org.email}</a></p>
                 <p class="phone"><strong>Phone:</strong> ${org.phone}</p>

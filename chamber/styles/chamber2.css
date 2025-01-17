@@ -89,7 +89,7 @@ h4{
     text-decoration: none;
 }
 
-.grid-view .name, .card .name{
+.grid-view .name{
     border-bottom: solid black 1px;
 }
 
@@ -235,6 +235,7 @@ footer img{
     #list-view-btn{
         display: none;
     }
+
 
 
 
