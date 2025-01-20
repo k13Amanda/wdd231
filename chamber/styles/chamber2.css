@@ -134,10 +134,14 @@ h4{
 
 
 
-.eventcard, .currentcard, .joincard{
+.eventcard, .weathercard, .joincard{
     background-color: var(--headingtext);
     height: auto;
     padding: 15px;
+}
+
+.weathercard{
+    text-align: center;
 }
 
 .heroimg{
