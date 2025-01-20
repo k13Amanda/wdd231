@@ -78,6 +78,7 @@ const myDesc = document.querySelector('#desc');
 const myTemp = document.querySelector('#temp');
 const myGraphic = document.querySelector('#graphic');
 
+
 const day1 = document.getElementById('day1');
 const day2 = document.getElementById('day2');
 const day3 = document.getElementById('day3');
