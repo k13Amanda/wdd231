@@ -73,28 +73,46 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // 02f154a08ba74fabee63f6aa1cde9c7e
 
-const myTown = document.querySelector('#town');
+const myTown = document.getElementById('town');
 const myDesc = document.querySelector('#desc');
 const myTemp = document.querySelector('#temp');
 const myGraphic = document.querySelector('#graphic');
+
+const day1 = document.getElementById('day1');
+const day2 = document.getElementById('day2');
+const day3 = document.getElementById('day3');
 
 const myKey = "02f154a08ba74fabee63f6aa1cde9c7e";
 const myLat = "27.049954761550023";
 const myLong ="-82.23954575506782";
 
 const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+const forecastURL = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
 
 async function apiFetch() {
-    try{
-        const response = await fetch(myURL); // Corrected 'fatch' to 'fetch'
-        if (response.ok){
+    try {
+        const response = await fetch(myURL);
+        if (response.ok) {
             const data = await response.json();
             console.log(data);
             displayResults(data);
-        } else {  
+        } else {
             throw Error(await response.text());
         }
-    } catch (error){
+    } catch (error) {
+        console.log(error);
+    }
+
+    try {
+        const response = await fetch(forecastURL);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayForecast(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
         console.log(error);
     }
 }
@@ -103,10 +121,29 @@ function displayResults(data) {
     console.log('hello');
     myTown.innerHTML = data.name;
     myDesc.innerHTML = data.weather[0].description;
-    myTemp.innerHTML = `${data.main.temp}&deg;F`; // Fixed template literal
+    myTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     myGraphic.setAttribute('src', iconsrc);
     myGraphic.setAttribute('alt', data.weather[0].description);
 }
 
+function displayForecast(data) {
+    const forecast = data.list.filter(item => item.dt_txt.endsWith("12:00:00")).slice(0, 3); // Fetch noon data for 3 days
+    const days = [day1, day2, day3];
+    forecast.forEach((dayData, index) => {
+        const date = new Date(dayData.dt_txt).toLocaleDateString();
+        const temp = `${dayData.main.temp}&deg;F`;
+        const description = dayData.weather[0].description;
+        const icon = `https://openweathermap.org/img/wn/${dayData.weather[0].icon}@2x.png`;
+
+        days[index].innerHTML = `
+            <p>${date}</p>
+            <img src="${icon}" alt="${description}">
+            <p>${temp}</p>
+            <p>${description}</p>
+        `;
+    });
+}
+
 apiFetch();
+
