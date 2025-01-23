@@ -29,6 +29,7 @@ hamburger.addEventListener('click', function() {
 
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const courses = [
         {
@@ -95,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const classlist = document.getElementById('classlist');
     const totalCreditsElement = document.getElementById('total-credits');
+    const courseDetails = document.querySelector('#course-details');
 
     function renderCourses(filter = 'all') {
         classlist.innerHTML = ''; // Clear existing courses
@@ -110,6 +112,12 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 courseElement.innerHTML = `<p>${course.subject} ${course.number}</p>`;
             }
+
+            // Add event listener to each course element to show the details in the modal
+            courseElement.addEventListener('click', () => {
+                displayCourseDetails(course);
+            });
+
             classlist.appendChild(courseElement);
         });
 
@@ -126,4 +134,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     renderCourses(); // Initial render with all courses
+
+    function displayCourseDetails(course) {
+        courseDetails.innerHTML = '';
+        courseDetails.innerHTML = `
+        <button id="closeModal"> x </button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+        courseDetails.showModal();
+
+        // Fixing the close modal function
+        const closeModal = document.getElementById('closeModal');
+        closeModal.addEventListener('click', () => {
+            courseDetails.close();
+        });
+    }
 });
