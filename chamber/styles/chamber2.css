@@ -272,8 +272,6 @@ footer img{
 
 
 
-
-
   
   .member-card a {
     text-decoration: none;
@@ -330,7 +328,7 @@ footer img{
 /* join page css Form */
 
 .form-container {
-    background-color: #f8f8f8; 
+    background-color: rgba(13, 86, 120, 0.1);
     padding: 20px; 
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
