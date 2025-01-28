@@ -71,6 +71,14 @@ h4{
     animation: moveBackAndForth 5s ease-in-out infinite;
 }
 
+/* .joincard h3 {
+    animation-name: moveBackAndForth;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} */
+
+
 @keyframes moveBackAndForth {
     0% {
         transform: translateX(0);
@@ -214,6 +222,125 @@ footer img{
 }
 
 
+/* join page css*/
+
+/* Default styling for larger screens */
+.form-container {
+    width: 60%; /* Adjust this as needed */
+    float: left;
+  }
+    
+  .cards-container {
+    width: 30%;
+    float: left;
+  }
+  
+  .member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .member-card a {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* join page css Form */
+
+.form-container {
+    background-color: #f8f8f8; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto;
+    max-width: 600px; 
+  }
+  
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-container input,
+  .form-container select,
+  .form-container textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    font-size: 16px; 
+  }
+  
+  .form-container input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #45a049; 
+  }
+  
+  
+  
+
 
 
 /* Media query for mobile view */
@@ -273,8 +400,19 @@ footer img{
     }
 
 
+    /* join page css */
+    .container {
+        flex-direction: column;
+    }
+    
+    .form-container, .cards-container {
+    width: 100%;
+    float: none;
+    }
 
+    .cards-container {
+    margin-top: 20px; 
+    }
 
 }
-
 

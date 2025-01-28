@@ -14,7 +14,7 @@
     <meta name="twitter:image:alt" content="Picture of a florida beach">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber2.css">
-    <script src="scripts/chamber2.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,98 @@
         
 
         <h2>Join Page</h2>
-        
+
+        <div class="container">
+            <div class="form-container">
+                <form method="get" action="thankyou.html">
+                    <label for="first-name">First Name*:</label>
+                    <input type="text" id="first-name" name="first_name" title="First Name" required autocomplete="given-name">
+            
+                    <label for="last-name">Last Name*:</label>
+                    <input type="text" id="last-name" name="last_name" title="Last Name" required autocomplete="family-name">
+            
+                    <label for="org-title">Organizational Title:</label>
+                    <input type="text" id="org-title" name="org_title" title="Organizational Title" pattern="[A-Za-z-\s]{7,}" autocomplete="organization-title">
+            
+                    <label for="email">Email Address*:</label>
+                    <input type="email" id="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@example.com">
+            
+                    <label for="phone">Mobile Phone Number*:</label>
+                    <input type="tel" id="phone" name="phone" title="Mobile Phone Number" required autocomplete="tel" placeholder="555-555-5555" pattern="\d{3}-\d{3}-\d{4}" oninvalid="this.setCustomValidity('Please enter a phone number in the format 555-555-5555')" oninput="this.setCustomValidity('')">
+            
+                    <label for="organization">Business/Organization Name*:</label>
+                    <input type="text" id="organization" name="organization" title="Organization Name" required autocomplete="organization">
+            
+                    <label for="membership-level">Membership Level*:</label>
+                    <select id="membership-level" name="membership_level" title="Membership Level" required>
+                        <option value="NP">NP Membership (No fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+            
+                    <label for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+            
+                    <input type="hidden" id="timestamp" name="timestamp" value="<?= date('Y-m-d H:i:s'); ?>">
+            
+                    <input type="submit" value="Join the Chamber">
+                </form>
+            </div>
+
+            <div class="cards-container">
+                <div class="member-card">
+                  <h3>Basic Membership</h3>
+                  <a href="#basicModal">More Info</a>
+                </div>
+                <div class="member-card">
+                  <h3>Standard Membership</h3>
+                  <a href="#standardModal">More Info</a>
+                </div>
+                <div class="member-card">
+                  <h3>Premium Membership</h3>
+                  <a href="#premiumModal">More Info</a>
+                </div>
+                <div class="member-card">
+                  <h3>Elite Membership</h3>
+                  <a href="#eliteModal">More Info</a>
+                </div>
+            </div>
+        </div>
+
+            <!-- Modals -->
+        <div id="basicModal" class="modal">
+            <div class="modal-content">
+            <span class="close" data-modal="basicModal">&times;</span>
+            <h2>Basic Membership</h2>
+            <p>Benefits include event discounts, access to special events, and basic training resources.</p>
+            </div>
+        </div>
+
+        <div id="standardModal" class="modal">
+            <div class="modal-content">
+            <span class="close" data-modal="standardModal">&times;</span>
+            <h2>Standard Membership</h2>
+            <p>Includes all Basic benefits, plus additional training resources and spotlight positions on the home page.</p>
+            </div>
+        </div>
+
+        <div id="premiumModal" class="modal">
+            <div class="modal-content">
+            <span class="close" data-modal="premiumModal">&times;</span>
+            <h2>Premium Membership</h2>
+            <p>Includes all Standard benefits, plus advertising opportunities and premium event discounts.</p>
+            </div>
+        </div>
+
+        <div id="eliteModal" class="modal">
+            <div class="modal-content">
+            <span class="close" data-modal="eliteModal">&times;</span>
+            <h2>Elite Membership</h2>
+            <p>Includes all Premium benefits, plus exclusive special events and one-on-one training sessions.</p>
+            </div>
+        </div>
+
 
     </main>
 
