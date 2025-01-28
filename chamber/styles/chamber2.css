@@ -67,16 +67,16 @@ h4{
 
 
 
-.joincard h3 {
+.moving-heading {
     animation: moveBackAndForth 5s ease-in-out infinite;
 }
 
-/* .joincard h3 {
+.moving-heading {
     animation-name: moveBackAndForth;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-} */
+} 
 
 
 @keyframes moveBackAndForth {
@@ -84,7 +84,7 @@ h4{
         transform: translateX(0);
     }
     50% {
-        transform: translateX(20px);
+        transform: translateX(200px);
     }
     100% {
         transform: translateX(0);
@@ -224,7 +224,6 @@ footer img{
 
 /* join page css*/
 
-/* Default styling for larger screens */
 .form-container {
     width: 60%; /* Adjust this as needed */
     float: left;
@@ -241,7 +240,40 @@ footer img{
     margin: 10px 0;
     padding: 20px;
     text-align: center;
+    transition: all 0.6s ease;
+    opacity:10;
+    transform: translateY(90px);
+    background-color: rgba(13, 86, 120, 0.3);
   }
+
+  .cards-container .member-card:nth-child(1) {
+    animation: card-appear 0.9s ease-in-out 0.2s forwards;
+  }
+  
+  .cards-container .member-card:nth-child(2) {
+    animation: card-appear 0.9s ease-in-out 0.4s forwards;
+  }
+  
+  .cards-container .member-card:nth-child(3) {
+    animation: card-appear 0.9s ease-in-out 0.6s forwards;
+  }
+  
+  .cards-container .member-card:nth-child(4) {
+    animation: card-appear 0.9s ease-in-out 0.8s forwards;
+  }
+  
+  @keyframes card-appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+
+
   
   .member-card a {
     text-decoration: none;
