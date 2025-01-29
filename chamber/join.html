@@ -58,7 +58,7 @@
                     <input type="text" id="last-name" name="last_name" title="Last Name" required autocomplete="family-name">
             
                     <label for="org-title">Organizational Title:</label>
-                    <input type="text" id="org-title" name="org_title" title="Organizational Title" pattern="[A-Za-z-\s]{7,}" autocomplete="organization-title">
+                    <input type="text" id="org-title" name="org_title" title="Organizational Title" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title">
             
                     <label for="email">Email Address*:</label>
                     <input type="email" id="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@example.com">
@@ -78,7 +78,6 @@
                         <option value="Gold">Gold Membership</option>
                     </select>
 
-            
                     <label for="description">Business/Organization Description:</label>
                     <textarea id="description" name="description" title="Business/Organization Description"></textarea>
             
