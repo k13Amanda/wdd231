@@ -80,8 +80,8 @@
                     <label for="description">Business/Organization Description:</label>
                     <textarea id="description" name="description" title="Business/Organization Description"></textarea>
             
-                    <input type="hidden" id="timestamp" name="timestamp" value="<?= date('Y-m-d H:i:s'); ?>">
-            
+                    <input type="hidden" id="timestamp" name="timestamp">
+
                     <input type="submit" value="Join the Chamber">
                 </form>
             </div>
@@ -110,7 +110,7 @@
         <div id="basicModal" class="modal">
             <div class="modal-content">
             <span class="close" data-modal="basicModal">&times;</span>
-            <h2>Basic Membership</h2>
+            <h2>Basic Membership -Free</h2>
             <p>Benefits include event discounts, access to special events, and basic training resources.</p>
             </div>
         </div>
@@ -118,7 +118,7 @@
         <div id="standardModal" class="modal">
             <div class="modal-content">
             <span class="close" data-modal="standardModal">&times;</span>
-            <h2>Standard Membership</h2>
+            <h2>Standard Membership- $50</h2>
             <p>Includes all Basic benefits, plus additional training resources and spotlight positions on the home page.</p>
             </div>
         </div>
@@ -126,7 +126,7 @@
         <div id="premiumModal" class="modal">
             <div class="modal-content">
             <span class="close" data-modal="premiumModal">&times;</span>
-            <h2>Premium Membership</h2>
+            <h2>Premium Membership- $100</h2>
             <p>Includes all Standard benefits, plus advertising opportunities and premium event discounts.</p>
             </div>
         </div>
@@ -134,7 +134,7 @@
         <div id="eliteModal" class="modal">
             <div class="modal-content">
             <span class="close" data-modal="eliteModal">&times;</span>
-            <h2>Elite Membership</h2>
+            <h2>Elite Membership- $500</h2>
             <p>Includes all Premium benefits, plus exclusive special events and one-on-one training sessions.</p>
             </div>
         </div>

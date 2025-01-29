@@ -52,4 +52,21 @@ document.querySelectorAll('.member-card a').forEach(link => {
       event.target.style.display = 'none';
     }
   });
+
   
+ // JavaScript function to set the timestamp when the page loads
+ window.onload = function() {
+    var timestampField = document.getElementById('timestamp');
+    var currentDate = new Date();
+    var formattedDate = currentDate.toLocaleString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: true
+    });
+    timestampField.value = formattedDate;
+};
