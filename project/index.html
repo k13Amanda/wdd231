@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amanda Wessman">
+    <meta name="description" content="WDD 231- Amanda Wessman - Project ">
+    <meta property="og:title" content="Bluga Whales">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://k13amanda.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://github.com/k13Amanda/wdd231/blob/main/project/images/blugajpeg.jpg?raw=true">
+    <meta property="og:description" content="WDD 231- Project on Bluga Whales">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Picture of a Bluga Whale">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bluga.css">
+    <script src="scripts/bluga.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Splash&display=swap" rel="stylesheet">
+    <title>WDD 231 - Amanda Wessman</title>
+</head>
+<body>
+    <header>
+        <div class="header-content-left">
+            <img src="images/beluga1.webp" alt="Picture of a bluga whale" class="headerpic">
+            <div>
+                <h1>Bluga Whale's</h1>
+                <h4>Amanda Wessman's Project WDD 321</h4>
+            </div>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 class="moving-heading">Sponser a Bluga Whale!</h2>
+        <br>
+        <section class="heroimg">
+            <img src="images/bluga2.webp" alt="Picture of a bluga whale">
+        </section>
+
+        <h2>Home</h2>
+        <div class="homecards">
+            <section class="eventcard">
+                <h3>Events</h3>
+                <br>
+                <p>Post your events here </p>
+            </section>
+
+            <section class="weathercard">
+                <h2>Current Weather</h2>
+                <h3 id="town"></h3>
+                <img id="graphic" src="images/florida-beach.webp" alt="weater logo">
+                <p id="desc"></p>
+                <p id="temp"></p>
+                <br>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast">
+                    <div class="day" id="day1"></div>
+                    <div class="day" id="day2"></div>
+                    <div class="day" id="day3"></div>
+                </div>
+            </section>
+
+            <section class="joincard">
+                <h3>Sign Up to Become a Member</h3><br>
+                <a href="join.html">Click here to Join</a>
+            </section>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <p>North Port Chamber of Commerce</p>
+            <p>100 N Beach Street</p>
+            <p>North Port, Floride 999</p>
+            <p>https://animalia.bio/beluga-whale</p>
+            <p>https://www.flickr.com/photos/briangratwicke/</p>
+        </div>
+
+        <div class="social-media-buttons">
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="images/youtubelogo.webp" alt="YouTube">             
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitterlogo.webp" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagramlogo.webp" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebooklogo.webp" alt="Facebook">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Amanda Wessman</p>
+            <p>©<span id="currentyear"></span> North Port Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

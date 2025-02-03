@@ -1,0 +1,267 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1600px;
+    font-family:"roboto", Arial, Helvetica, sans-serif;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --main-color:rgb(13, 86, 120);
+    --headingtext: rgb(255, 227, 194);
+}
+
+header{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header-content-left{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.headerpic{
+    margin: 15px;
+    height: 100px;
+}
+
+nav a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: var(--headingtext);
+}
+
+.hamburger {
+    display: none;
+}
+
+header{
+    background-color: var(--main-color);  
+}
+
+main{
+    margin: 20px;
+}
+
+h4{
+    color: white;
+}
+
+
+
+.moving-heading {
+    animation: moveBackAndForth 5s ease-in-out infinite;
+}
+
+.moving-heading {
+    animation-name: moveBackAndForth;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} 
+
+
+@keyframes moveBackAndForth {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.homecards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px;
+}
+
+.buscards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 20px;
+}
+
+.card p {
+    margin-bottom: 3px;
+}
+
+
+.card img{
+    height: 80px;
+    float: left;
+    padding: 5px;
+}
+
+.card{
+    background-color: var(--headingtext);
+}
+
+
+
+.eventcard, .weathercard, .joincard{
+    background-color: var(--headingtext);
+    height: auto;
+    padding: 15px;
+}
+
+
+
+.day {
+    flex: 1;
+    text-align: center;
+}
+
+
+.heroimg{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h1{
+    color:var(--headingtext);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    background-color: var(--main-color);
+    height: auto;
+    padding: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.copytext{
+    color: white;
+}
+
+footer img{
+    height: 4em;
+    padding: 15px;
+}
+
+
+  
+  .member-card a {
+    text-decoration: none;
+    color: rgb(32, 32, 147);
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+ 
+
+
+
+  
+  
+
+
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    footer{
+        display: block;
+    }
+
+    footer img{
+        display: inline;
+    }
+
+    .homecards, .buscards, .spotlight-container {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+        
+    .heroimg img{ 
+        width: 100%; /* Make the image responsive */ 
+        height: auto; /* Maintain aspect ratio */ 
+        max-width: 400px; /* Optional: Limit the maximum height */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    } 
+
+    .nav-links a {
+        padding: 20px;
+        background-color: black;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: block;
+        text-align: center;
+        font-size: 25pt;
+        color: white;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
