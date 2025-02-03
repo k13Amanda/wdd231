@@ -19,8 +19,11 @@ body{
 }
 
 :root{
-    --main-color:rgb(13, 86, 120);
-    --headingtext: rgb(255, 227, 194);
+    --main-color:#4c9bc0;
+    --headingtext: #c8e4ec;
+    --lightcolor: #e9f4f3;
+    --graycolor: #97aab3;
+    --2color: #4c9bc0;
 }
 
 header{
