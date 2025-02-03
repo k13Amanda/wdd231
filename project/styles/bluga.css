@@ -10,6 +10,7 @@
 body{
     max-width: 1600px;
     font-family:"roboto", Arial, Helvetica, sans-serif;
+
 }
 
 .roboto-regular {
@@ -19,10 +20,11 @@ body{
 }
 
 :root{
-    --main-color:#4c9bc0;
-    --headingtext: #c8e4ec;
+    --main-color:#3c94bd;
+    --headingtext:white;
     --lightcolor: #e9f4f3;
     --graycolor: #97aab3;
+    /* #c8e4ec */
 }
 
 header{
@@ -66,7 +68,7 @@ main{
 }
 
 h4{
-    color: #e9f4f3;;
+    color: white;
 }
 
 
