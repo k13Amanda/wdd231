@@ -70,4 +70,48 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+
+
+
+    // discover page 
+
+    // Function to check and display the message based on the visit time
+function displayVisitMessage() {
+    // Get the current date in milliseconds
+    const currentTime = Date.now();
+
+    // Retrieve the last visit time from localStorage
+    const lastVisit = localStorage.getItem('lastVisit');
+    
+    // If no last visit is found, it means it's the user's first visit
+    if (!lastVisit) {
+        localStorage.setItem('lastVisit', currentTime);
+        document.getElementById('sidebar').innerText = "Welcome! Let us know if you have any questions.";
+        return;
+    }
+
+    // Calculate the time difference in milliseconds
+    const timeDiff = currentTime - lastVisit;
+
+    // Calculate the number of days between visits
+    const daysSinceLastVisit = Math.floor(timeDiff / (1000 * 3600 * 24));
+
+    // If the visit was within the last 24 hours
+    if (daysSinceLastVisit < 1) {
+        document.getElementById('sidebar').innerText = "Back so soon! Awesome!";
+    } else {
+        const message = daysSinceLastVisit === 1 
+            ? `You last visited 1 day ago.` 
+            : `You last visited ${daysSinceLastVisit} days ago.`;
+        document.getElementById('sidebar').innerText = message;
+    }
+
+    // Update the last visit time in localStorage
+    localStorage.setItem('lastVisit', currentTime);
+}
+
+// Call the function to display the message
+displayVisitMessage();
+
+
     
