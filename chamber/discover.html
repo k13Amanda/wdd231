@@ -14,7 +14,7 @@
     <meta name="twitter:image:alt" content="Picture of a florida beach">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber2.css">
-    <script src="scripts/chamber2.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,89 +45,139 @@
     
     <main>
 
-        <div class="card-container">
+        <div id="discover-card-container" class="discover-card-container">
+            <!-- Cards will be inserted here dynamically by JS -->
+        </div>
+
+            
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <div class="card-container">
             <div class="card card1">
-                <h2>Title 1</h2>
+                <h2>Myakka State Forest</h2>
                 <figure>
-                    <img src="image1.jpg" alt="Image 1" width="200">
+                    <img src="images/myakka-forest.webp" alt="A scenic view of Myakka State Forest with lush greenery" width="200" loading="lazy">
                 </figure>
-                <address>123 Main St, Anytown, USA</address>
-                <p>Description for card 1.</p>
+                <address>2555 South River Road Englewood, FL 34223</address>
+                <p>Myakka State Forest is a hidden gem in North Port, offering visitors a variety of outdoor activities. It’s one of the only state forests located almost entirely within city limits.</p>
+                <p>North Port’s unique natural wonders, the Myakka State Forest is one of the country’s only state forests that’s encompassed almost entirely within city limits. Explore the 8,500-acre flatwood and longleaf pine forest via its 40 miles of hiking, biking, and equestrian trails. Camping, fishing, and small-game hunting are also common outdoor activities.</p>
                 <button>Learn More</button>
             </div>
         
             <div class="card card2">
-                <h2>Title 2</h2>
+                <h2>Charter A Fishing Boat</h2>
                 <figure>
-                    <img src="image2.jpg" alt="Image 2" width="200">
+                    <img src="images/charter-boats.webp" alt="A fishing boat ready for a charter trip on the water" width="200" loading="lazy">
                 </figure>
-                <address>456 Elm St, Anytown, USA</address>
-                <p>Description for card 2.</p>
+                <address>456 Elm St, Sarasota, Florida</address>
+                <p>Experience the thrill of tarpon fishing in North Port with a guided fishing charter. A perfect day out on the water for fishing enthusiasts.</p>
+                <p>North Port is also known for its excellent tarpon fishing. Let Captain Chris Conte of Cash Money Charters take you out for a fun-filled day of fishing on the Myakka River. There’s something to catch in every season, but if it’s tarpon you hope to hook, consider visiting in May, June, or July.</p>
                 <button>Learn More</button>
             </div>
         
             <div class="card card3">
-                <h2>Title 8</h2>
+                <h2>Soak In Mineral Springs</h2>
                 <figure>
-                    <img src="image8.jpg" alt="Image 8" width="200">
+                    <img src="images/warm-mineral-springs.webp" alt="The warm Mineral Springs with natural clear water" width="200" loading="lazy">
                 </figure>
-                <address>890 Oak St, Anytown, USA</address>
-                <p>Description for card 8.</p>
+                <address>12200 San Servando Ave, North Port, FL 34287</address>
+                <p>Relax in the state’s only natural warm spring, perfect for a peaceful dip. It’s a unique experience with high mineral concentrations in the water.</p>
+                <p>North Port is home to the state’s only natural warm spring. The spring at Warm Mineral Springs Park stays at a balmy 85 degrees year-round and is thought to have one of the highest mineral concentrations of any natural spring in the U.S., making it the perfect location to take a dip. With nine million gallons of freshwater that replenishes itself every two hours, you’ll have a one-of-a-kind experience at this giant natural swimming pool.</p>
                 <button>Learn More</button>
             </div>
         
             <div class="card card4">
-                <h2>Title 1</h2>
+                <h2>Paddle In North Port</h2>
                 <figure>
-                    <img src="image1.jpg" alt="Image 1" width="200">
+                    <img src="images/kayak.webp" alt="A person paddling a kayak on the calm waters of North Port" width="200" loading="lazy">
                 </figure>
-                <address>123 Main St, Anytown, USA</address>
-                <p>Description for card 1.</p>
+                <address>5810 Gasparilla Road, Placida, FL 33946</address>
+                <p>Paddle across serene waters in North Port with options for kayaking, canoeing, and paddleboarding. A peaceful adventure surrounded by nature.</p>
+                <p>There’s absolutely nothing more serene than an early morning paddle in North Port. Start on the Myakka River, the Myakkahatchee Creek, or on a freshwater canal and prepare to be transported by the stillness of the water, the natural beauty that surrounds you, and the unmatched peace of the experience. There are plenty of places to rent a kayak, canoe, or paddle board, and still more places to put in. Glass Bottom Rentals offers guided kayak and paddleboard tour launching from McKibben Park. If you’ve got your own watercraft, you can put it at Marina Park and create a custom adventure following Sarasota County’s Paddling Blueways Guide. Along your route, you might spot manatees, mangroves, diving birds, and even alligators.</p>
                 <button>Learn More</button>
             </div>
         
             <div class="card card5">
-                <h2>Title 2</h2>
+                <h2>Make A Splash</h2>
                 <figure>
-                    <img src="image2.jpg" alt="Image 2" width="200">
+                    <img src="images/pool.webp" alt="The North Port Aquatic Center with water slides and pools" width="200" loading="lazy">
                 </figure>
-                <address>456 Elm St, Anytown, USA</address>
-                <p>Description for card 2.</p>
+                <address>6205 West Price Blvd., North Port, FL 34291</address>
+                <p>Take the family to the North Port Aquatic Center to enjoy fun water slides, pools, and a lazy river. Perfect for a day of family-friendly activities.</p>
+                <p>Take the kids to cool off at the North Port Aquatic Center, which features a zero-entry pool, multiple water slides, and the Relaxahatchee Lazy River. The snack bar offers hot dogs, ice cream treats, and other basics to tide you over until it's time to head out to dinner..</p>
                 <button>Learn More</button>
             </div>
         
             <div class="card card6">
-                <h2>Title 8</h2>
+                <h2>Myakka River State Park</h2>
                 <figure>
-                    <img src="image8.jpg" alt="Image 8" width="200">
+                    <img src="images/myakka-river.webp" alt="A scenic view of the Myakka River State Park with lush landscapes" width="200" loading="lazy">
                 </figure>
-                <address>890 Oak St, Anytown, USA</address>
-                <p>Description for card 8.</p>
+                <address>13208 State Road 72 Sarasota FL 34241</address>
+                <p>Explore one of Florida’s oldest and largest state parks, filled with wetlands, swamps, and unique wildlife. An excellent destination for nature lovers.</p>
+                <p>One of the state’s largest and oldest parks is ready to be discovered on the north side of the city.
+        
+                    Myakka River State Park has a wealth of natural environments like wetlands, marshes, and cypress swamps. One feature you have to track down is the Deep Hole, a karst sinkhole up to 100 feet deep.
+        
+                    With campgrounds and an acclaimed trail system, the park is a hotspot for amateur bird enthusiasts, who come to catch a glimpse of some of the seldom seen species that call the area home.
+        
+                    One of these is the roseate spoonbill, and I had the privilege of seeing this magnificent and reclusive species foraging on the muddy banks of the river.
+        
+                    The park opened in 1942, following almost a decade of work by the Civilian Conservation Corps, leaving it with beautiful parkitecture still in use today.</p>
                 <button>Learn More</button>
             </div>
         
             <div class="card card7">
-                <h2>Title 1</h2>
+                <h2>CoolToday Park</h2>
                 <figure>
-                    <img src="image1.jpg" alt="Image 1" width="200">
+                    <img src="images/cooltoday-park.webp" alt="A view of CoolToday Park during a baseball game in North Port" width="200" loading="lazy">
                 </figure>
-                <address>123 Main St, Anytown, USA</address>
-                <p>Description for card 1.</p>
+                <address>18800 West Villages Parkway, Venice, FL 34293</address>
+                <p>Visit CoolToday Park to catch a baseball game or enjoy other exciting events. Home to the Atlanta Braves’ spring training, it’s an iconic venue in North Port.</p>
+                <p>In 2019 North Port became the new spring training home for Major League Baseball’s Atlanta Braves.
+        
+                    The crowning glory of this $140 million complex is the CoolToday Park, seating 8,000 people.
+        
+                    I’ve watched a game here, and the best feature for me was the concourse walkway, which runs along the entire grandstand, and is something I normally associate with larger stadiums.
+        
+                    It means you can hang out a little, and chat with a few friends without missing any of the action.
+        
+                    During these warm-up games, taking place late February to late March, you’ll see some of baseball’s biggest names in action, and will get a glimpse of the next generation of stars.
+        
+                    Later in the year, CoolToday Park is the venue for North Port’s Freedom Festival, with live music and fireworks on July 4.</p>
                 <button>Learn More</button>
             </div>
         
             <div class="card card8">
-                <h2>Title 2</h2>
+                <h2>Deer Creek Prairie Preserve</h2>
                 <figure>
-                    <img src="image2.jpg" alt="Image 2" width="200">
+                    <img src="images/nature-preserve.webp" alt="A peaceful view of Deer Creek Prairie Preserve with natural Florida landscapes" width="200" loading="lazy">
                 </figure>
-                <address>456 Elm St, Anytown, USA</address>
-                <p>Description for card 2.</p>
+                <address>10201 South Tamiami Trail North Port Florida</address>
+                <p>Discover Deer Creek Prairie Preserve, a natural haven for wildlife and outdoor enthusiasts. Explore miles of trails in this peaceful, remote area.</p>
+                <p>If you want to spend more time in the wilderness around North Port then look no further than Deer Prairie Creek Preserve.
+        
+                    Almost 6,500 acres, this property encompasses a tributary of the Myakka River, and can be accessed from the edge of town at 10201 South Tamiami Trail (southern entrance).
+        
+                    For solitude, the Deer Prairie Creek Preserve is up there with the Myakka River State Park, with more than 60 miles of primitive, natural surface trails.
+        
+                    The preserve’s habitats range from wetlands to Florida dry prairie, oak hammock and scrubby flatwoods. There’s a diversity of wildlife to match, including bobcats, river otters and deer.
+        
+                    One species to look out for is the Florida scrub jay, which has been native to the region for more than two million years, but is now listed as ‘vulnerable’.</p>
                 <button>Learn More</button>
             </div> 
-        </div>
+        </div>         -->
         
-       
 
         
 
@@ -170,6 +220,8 @@
             <p>Amanda Wessman</p>
             <p>©<span id="currentyear"></span> North Port Chamber of Commerce</p>
             <p><span id="lastModified"></span></p>
+            <p>https://www.southernliving.com/north-port-florida-8348409</p>
+            <p>https://www.thecrazytourist.com/15-best-things-to-do-in-north-port-fl/</p>
         </div>
     </footer>
     
