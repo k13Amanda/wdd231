@@ -411,8 +411,6 @@ footer img{
     text-align: center;
     background-color: rgba(13, 86, 120, 0.3);
     transition: all 0.6s ease;
-    opacity: 0;
-    transform: translateY(90px);
     position: relative;
 }
 
@@ -423,42 +421,15 @@ footer img{
 
 
 
-
-/* Card animations */
-.card:nth-child(1) {
-    animation: card-appear 0.9s ease-in-out 0.2s forwards;
-}
-.card:nth-child(2) {
-    animation: card-appear 0.9s ease-in-out 0.4s forwards;
-}
-.card:nth-child(3) {
-    animation: card-appear 0.9s ease-in-out 0.6s forwards;
-}
-.card:nth-child(4) {
-    animation: card-appear 0.9s ease-in-out 0.8s forwards;
-}
-.card:nth-child(5) {
-    animation: card-appear 0.9s ease-in-out 0.2s forwards;
-}
-.card:nth-child(6) {
-    animation: card-appear 0.9s ease-in-out 0.4s forwards;
-}
-.card:nth-child(7) {
-    animation: card-appear 0.9s ease-in-out 0.6s forwards;
-}
-.card:nth-child(8) {
-    animation: card-appear 0.9s ease-in-out 0.8s forwards;
-}
-
 /* Card hover effect */
 .card:hover {
-    transform: translateY(-5px); /* Slightly raise the card */
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    transform: translateY(-7px);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15); 
 }
 
 
 .card button {
-    background-color: #4CAF50;
+    background-color: #336c35;
     color: white;
     padding: 10px;
     border: none;
@@ -488,6 +459,10 @@ footer img{
             'card6'
             'card7'
             'card8';
+    }
+    .card:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
 @media (min-width: 641px) and (max-width: 1024px) {
