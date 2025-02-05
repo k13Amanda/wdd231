@@ -375,9 +375,12 @@ footer img{
   
 
 
-  
 
 /* Discover Page CSS */
+
+.discovertitle{
+    color: black;
+}
 
 
 .discover-card-container {
