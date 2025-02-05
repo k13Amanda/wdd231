@@ -269,9 +269,6 @@ footer img{
     }
   }
 
-
-
-
   
   .member-card a {
     text-decoration: none;
@@ -382,7 +379,6 @@ footer img{
     color: black;
 }
 
-
 .discover-card-container {
     display: grid;
     grid-template-areas:
@@ -419,9 +415,6 @@ footer img{
     margin-bottom: 10px;
 }
 
-
-
-/* Card hover effect */
 .card:hover {
     transform: translateY(-7px);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15); 
@@ -438,14 +431,11 @@ footer img{
     margin-top: 10px;
 }
 
-
 .card img {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
 }
-
-
 
 
 @media (max-width: 640px) {
@@ -516,9 +506,9 @@ footer img{
     }
         
     .heroimg img{ 
-        width: 100%; /* Make the image responsive */ 
-        height: auto; /* Maintain aspect ratio */ 
-        max-width: 400px; /* Optional: Limit the maximum height */
+        width: 100%; 
+        height: auto; 
+        max-width: 400px; 
     }
 
     .nav-links {
