@@ -149,26 +149,109 @@ footer img{
     padding: 15px;
 }
 
-  .member-card a {
+
+
+.member-card a {
     text-decoration: none;
     color: rgb(32, 32, 147);
     cursor: pointer;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
-  }
-  
-  .cards-container {
+}
+
+.cards-container {
     flex-direction: column;
     margin-left: 20px;
+}
+  
+
+/* baby page css */
+
+.babypic{
+    width: 100%;
+    max-width: 600px;
+    margin: 30px;
+    border: 3px solid black;
+}
+
+
+
+/* live page css */
+
+.livepic{
+    width: 100%;
+    max-width: 600px;
+    margin: 30px;
+    border: 3px solid black;
+}
+
+.weatherpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+  
+  /* Container for the weather card */
+  .weather-card {
+    background-color: #bdd1e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
   }
   
- 
+  
+  /* Styling for weather description */
+  .weather-card p {
+    margin: 10px 0;
+  }
+  
+  /* Image for the weather icon */
+  .weather-card img {
+    width: 90px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* 3-Day Forecast Styling */
+  .forecast-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .forecast-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forecast-card h4 {
+    font-size: 18px;
+    color: black;
+  }
+  
+  .forecast-card img {
+    width: 60px;
+    height: auto;
+  }
+  
 
 
+/* sponser page css */
 
-  .form-container {
+.form-container {
     width: 100%;
     max-width: 500px;
     background-color: var(--lightcolor);
@@ -224,14 +307,26 @@ button:hover {
 }
 
 
+/* sponser page picture css */
 
-  
+.sponserpic{
+    margin: 20px;
+    max-width: 900px;
+    border: 3px solid black;
+}
+
+.sponsertop{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+
+}
   
 
 
 
 /* Media query for mobile view */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     main {
         display: block;
     }
@@ -279,6 +374,17 @@ button:hover {
         text-align: center;
         font-size: 25pt;
         color: white;
+    }
+
+    .sponserpic{
+        display: block;
+        margin: 20px;
+        width: 90%;
+        max-width: 900px;
+    }
+
+    .weatherpage{
+        display: block;
     }
 
 
