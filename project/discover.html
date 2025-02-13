@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/bluga.css">
     <script src="scripts/bluga.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <link rel="icon" href="images/iconbluga.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,31 +46,20 @@
     </header>
     
     <main>
-        <h2 class="moving-heading">Sponser a Beluga Whale!</h2>
-        <br>
-        <section class="heroimg">
-            <img src="images/bluga2.webp" alt="Picture of a Bulga whale">
-        </section>
+        <h2>Discover all the captive Beluga Whales in North American</h2>
 
-        <h2>Beluga Whales Information</h2>
-        <div class="homecards">
-            <section class="babycard">
-                <h2>Learn about Beluga Whale Babies</h2>
-                <br>
-                <a href="baby.html">Click here to learn about beluga babies</a>
-            </section>
+        <select id="facility-select">
+            <option value="">Sort by Facility</option>
+            <option value="Georgia Aquarium">Georgia Aquarium</option>
+            <option value="Marineland Canada">Marineland Canada</option>
+            <option value="Mystic Aquarium">Mystic Aquarium</option>
+            <option value="SeaWorld Orlando">SeaWorld Orlando</option>
+            <option value="SeaWorld San Antonio">SeaWorld San Antonio</option>
+            <option value="SeaWorld San Diego">SeaWorld San Diego</option>
+            <option value="Shedd Aquarium">Shedd Aquarium</option>
+        </select>
 
-            <section class="livecard">
-                <h2>Where do Bulga Whales live</h2>
-                <a href="live.html">Click here to learn where beluga live</a>
-            </section>
-
-            <section class="joincard">
-                <h2>Sign Up to Sponser a Bulga whale</h2>
-                <a href="sponser.html">Click here sponser a beluga</a>
-            </section>
-        </div>
-
+        <div id="whale-cards-container"></div>
 
     </main>
 

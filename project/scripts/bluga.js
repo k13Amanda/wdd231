@@ -1,3 +1,5 @@
+
+
 // currentyear
 const yearSpan = document.querySelector("#currentyear");
 const today = new Date();
