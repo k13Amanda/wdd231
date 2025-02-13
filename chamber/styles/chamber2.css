@@ -415,7 +415,7 @@ footer img{
     margin-bottom: 10px;
 }
 
-.card:hover {
+.card img:hover {
     transform: translateY(-7px);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15); 
 }
@@ -449,12 +449,13 @@ footer img{
             'card6'
             'card7'
             'card8';
-    }
-    .card:hover {
+        }
+        .card img:hover  {
         transform: none;
         box-shadow: none;
-    }
+        }
 }
+
 @media (min-width: 641px) and (max-width: 1024px) {
     .discover-card-container {
         grid-template-areas:
@@ -464,6 +465,7 @@ footer img{
             'card7 card8';
     }
 }
+
 @media (min-width: 1025px) {
     .discover-card-container {
         grid-template-areas:
