@@ -134,6 +134,31 @@ document.getElementById("sponsorForm").addEventListener("submit", function(event
 
 
 
+// model js
+document.addEventListener("DOMContentLoaded", function() {
+  // Event listener for opening the sponsor modal
+  document.getElementById("openSponsorModal").addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent default link behavior
+      document.getElementById("sponsorModal").style.display = "block";
+  });
+
+  // Event listener for closing the sponsor modal
+  document.getElementById("closeSponsorModal").addEventListener("click", function() {
+      document.getElementById("sponsorModal").style.display = "none";
+  });
+
+  // Optional: Close the modal when clicking outside of the modal content
+  window.addEventListener("click", function(event) {
+      const sponsorModal = document.getElementById("sponsorModal");
+      if (event.target === sponsorModal) {
+          sponsorModal.style.display = "none";
+      }
+  });
+});
+
+
+
+
 
 
 

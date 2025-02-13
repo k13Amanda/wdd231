@@ -75,61 +75,61 @@ const whales = [
     {"NAME": "Naya", "SEX": "F", "FACILITY": "Shedd Aquarium", "ORIGIN": "Hudson bay, Canada"}];
   
   // Function to generate whale cards
-  function generateWhaleCards(whaleArray) {
-    const container = document.getElementById("whale-cards-container");
-    container.innerHTML = '';  // Clear previous cards
+        function generateWhaleCards(whaleArray) {
+            const container = document.getElementById("whale-cards-container");
+            container.innerHTML = '';  // Clear previous cards
 
-    // Loop through each whale in the array
-    whaleArray.forEach(whale => {
-        const card = document.createElement("div");
-        card.classList.add("whale-card");
+            // Loop through each whale in the array
+            whaleArray.forEach(whale => {
+                const card = document.createElement("div");
+                card.classList.add("whale-card");
 
-        // Create and append whale name
-        const name = document.createElement("h2");
-        name.textContent = `Name: ${whale.NAME}`;
-        card.appendChild(name);
+                // Create and append whale name
+                const name = document.createElement("h2");
+                name.textContent = `Name: ${whale.NAME}`;
+                card.appendChild(name);
 
-        // Create and append whale sex
-        const sex = document.createElement("p");
-        sex.textContent = `Sex: ${whale.SEX}`;
-        card.appendChild(sex);
+                // Create and append whale sex
+                const sex = document.createElement("p");
+                sex.textContent = `Sex: ${whale.SEX}`;
+                card.appendChild(sex);
 
-        // Create and append whale facility
-        const facility = document.createElement("p");
-        facility.textContent = `Facility: ${whale.FACILITY}`;
-        card.appendChild(facility);
+                // Create and append whale facility
+                const facility = document.createElement("p");
+                facility.textContent = `Facility: ${whale.FACILITY}`;
+                card.appendChild(facility);
 
-        // Create and append whale origin
-        const origin = document.createElement("p");
-        origin.textContent = `Origin: ${whale.ORIGIN}`;
-        card.appendChild(origin);
+                // Create and append whale origin
+                const origin = document.createElement("p");
+                origin.textContent = `Origin: ${whale.ORIGIN}`;
+                card.appendChild(origin);
 
-        // Append card to container
-        container.appendChild(card);
-    });
-}
+                // Append card to container
+                container.appendChild(card);
+            });
+        }
 
-// Function to sort whales by facility
-function sortWhalesByFacility() {
-    const selectedFacility = document.getElementById("facility-select").value;
-    let sortedWhales;
+        // Function to sort whales by facility
+        function sortWhalesByFacility() {
+            const selectedFacility = document.getElementById("facility-select").value;
+            let sortedWhales;
 
-    if (selectedFacility === "") {
-        // If no selection, show all whales
-        sortedWhales = whales;
-    } else {
-        // Sort by the selected facility
-        sortedWhales = whales.filter(whale => whale.FACILITY === selectedFacility);
-    }
+            if (selectedFacility === "") {
+                // If no selection, show all whales
+                sortedWhales = whales;
+            } else {
+                // Sort by the selected facility
+                sortedWhales = whales.filter(whale => whale.FACILITY === selectedFacility);
+            }
 
-    // Generate cards for the sorted whales
-    generateWhaleCards(sortedWhales);
-}
+            // Generate cards for the sorted whales
+            generateWhaleCards(sortedWhales);
+        }
 
-// Event listener for dropdown change
-document.getElementById("facility-select").addEventListener("change", sortWhalesByFacility);
+        // Event listener for dropdown change
+        document.getElementById("facility-select").addEventListener("change", sortWhalesByFacility);
 
-// Initial call to render all cards
-window.onload = () => generateWhaleCards(whales);
+        // Initial call to render all cards
+        window.onload = () => generateWhaleCards(whales);
   
   
