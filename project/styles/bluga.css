@@ -47,6 +47,7 @@ footer a {
 .headerpic{
     margin: 15px;
     height: 100px;
+    width: auto;
 }
 img{
     max-width: 1500px;
@@ -156,6 +157,7 @@ footer{
 
 footer img{
     height: 4em;
+    width: auto;
     padding: 15px;
 }
 
@@ -182,6 +184,7 @@ footer img{
 .babypic{
     width: 90%;
     max-width: 600px;
+    height: auto;
     margin: 30px;
     border: 3px solid black;
 }
@@ -192,6 +195,7 @@ footer img{
 
 .livepic{
     width: 90%;
+    height: auto;
     max-width: 600px;
     margin: 20px;
     border: 3px solid black;
@@ -217,6 +221,7 @@ footer img{
     padding: 20px;
     width: 90%;
     max-width: 700px;
+    height: auto;
     text-align: center;
     align-items: center;
 }
