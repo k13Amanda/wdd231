@@ -255,7 +255,7 @@ footer img{
 /* sponser page css */
 
 .form-container {
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     background-color: var(--lightcolor);
     padding: 20px;
@@ -313,6 +313,7 @@ button:hover {
 /* sponser page picture css */
 
 .sponserpic{
+    width: 90%;
     margin: 20px;
     max-width: 900px;
     border: 3px solid black;
@@ -434,7 +435,7 @@ discover page css */
     margin: 5px 0;
 }
 
-/* Optional styling for responsiveness */
+/* styling for responsiveness */
 @media screen and (max-width: 768px) {
     #whale-cards-container {
         grid-template-columns: repeat(2, 1fr);
@@ -529,12 +530,12 @@ select:focus {
         color: white;
     }
 
-    .sponserpic{
-        display: block;
-        margin: 20px;
-        width: 90%;
-        max-width: 900px;
+
+    .sponsertop{
+        display: grid;
+        grid-template-columns: 1fr;
     }
+
 
     .weatherpage{
         display: block;
