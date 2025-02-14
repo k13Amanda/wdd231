@@ -49,7 +49,8 @@
     <main>
         <h2>Discover all the captive Beluga Whales in North American</h2>
 
-        <select id="facility-select">
+        <label for="facility-select">Choose an Aquarium:</label>
+        <select id="facility-select" aria-labelledby="facility-label">
             <option value="">Sort by Facility</option>
             <option value="Georgia Aquarium">Georgia Aquarium</option>
             <option value="Marineland Canada">Marineland Canada</option>
@@ -59,7 +60,7 @@
             <option value="SeaWorld San Diego">SeaWorld San Diego</option>
             <option value="Shedd Aquarium">Shedd Aquarium</option>
         </select>
-
+        
         <div id="whale-cards-container"></div>
 
     </main>
