@@ -199,6 +199,10 @@ footer img{
     grid-template-columns: 1fr 1fr;
 }
 
+.weather-card h2{
+    padding: 5px;
+
+}
 
 
 
@@ -217,7 +221,7 @@ footer img{
 
 /* Styling for weather description */
 .weather-card p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 /* Image for the weather icon */
