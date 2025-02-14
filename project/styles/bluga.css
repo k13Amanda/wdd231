@@ -8,8 +8,8 @@
 }
 
 body{
-    max-width: 1600px;
     font-family:"roboto", Arial, Helvetica, sans-serif;
+    max-width: 1600px;
 
 }
 
@@ -50,6 +50,7 @@ footer a {
     width: auto;
 }
 img{
+    width: 90%;
     max-width: 1500px;
 }
 
@@ -129,7 +130,9 @@ a{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-width: 100%
 }
 
 h1{
@@ -495,7 +498,7 @@ select:focus {
 
 
 /* Media query for mobile view */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     main {
         display: block;
     }
