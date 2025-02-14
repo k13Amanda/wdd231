@@ -20,7 +20,7 @@ body{
 }
 
 :root{
-    --main-color:#3c94bd;
+    --main-color:#236786;
     --headingtext:white;
     --lightcolor: #bdd1e8;
     --graycolor: #97aab3;
@@ -32,6 +32,10 @@ header{
     align-items: end;
     justify-content: space-between;
     padding: 15px;
+}
+
+footer a {
+    color: white;
 }
 
 .header-content-left{
@@ -454,7 +458,6 @@ select {
     padding: 10px 20px; /* Add some padding for the dropdown */
     font-size: 1em;
     cursor: pointer;
-    width: 460px; /* Control the width of the dropdown */
     margin: 20px auto; /* Center the dropdown with auto margin */
     display: block; 
     border: 1px solid #ccc; /* Light gray border */
