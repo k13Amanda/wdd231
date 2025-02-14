@@ -85,13 +85,11 @@ a{
     color: black;
 }
 
-.moving-heading {
-    animation: moveBackAndForth 5s ease-in-out infinite;
-}
 
 .moving-heading {
+    animation: moveBackAndForth 5s ease-in-out infinite;
     animation-name: moveBackAndForth;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 } 
